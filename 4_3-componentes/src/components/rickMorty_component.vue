@@ -42,7 +42,7 @@ export default {
 <style>
 .imgPersonaje {
   border-radius: 50%;
-  width: 15%;
+  width: 125px;
   display: inline-block;
   margin: 15px 0;
 }
