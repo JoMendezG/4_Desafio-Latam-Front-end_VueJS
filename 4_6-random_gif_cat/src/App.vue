@@ -2,7 +2,8 @@
   <div>
     <h1>Random Gif Cat</h1>
 
-    <form action="">
+    <!-- @submit para poder obtener la info de los campos, y .prevent para que funcione el formulario -->
+    <form @submit.prevent="generarNuevoGatitoUrl()">
       <label for="titulo">Titulo:</label>
       <input type="text" required name="titulo" v-model="formulario.titulo" />
 
@@ -16,7 +17,6 @@
         <option value="sepia">Sepia</option>
         <option value="negative">Negative</option>
         <option value="paint">Paint</option>
-        <option value="pixel">Pixel</option>
       </select>
 
       <br />
@@ -41,13 +41,18 @@
         step="100"
         min="100"
         max="900"
-        v-model.number="formulario.tamño"
+        v-model.number="formulario.tamaño"
       />
 
-      <button type="submint">Obtener mi gatito</button>
+      <br />
+
+      <button type="submit">Obtener mi gatito</button>
     </form>
 
-    <img src="" alt="gatito" class="gatito" />
+    <!-- Previsualizar los resultados de los campos del formulario -->
+    <!-- <pre>formulario: {{ formulario }}</pre> -->
+
+    <img alt="gatito" :src="gatitoUrl" />
   </div>
 </template>
 
@@ -55,6 +60,7 @@
 export default {
   name: "App",
   data: () => ({
+    gatitoUrl: "",
     formulario: {
       titulo: null,
       filtro: null,
@@ -62,7 +68,16 @@ export default {
       tamaño: null,
     },
   }),
+  methods: {
+    // Función que se activa con el submint
+    generarNuevoGatitoUrl() {
+      console.log(this.formulario);
+      this.gatitoUrl = `https://cataas.com/cat/gif/says/${this.formulario.titulo}?filter=${this.formulario.filtro}&color=${this.formulario.color}&width=${this.formulario.tamaño}&height=${this.formulario.tamaño}`;
+    },
+  },
 };
 </script>
+
+https://cataas.com/cat/gif/says/hola?filter=sepia&color=red&width=400&height=400
 
 <style></style>
