@@ -1,8 +1,10 @@
 <template>
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand">V8</a
-      ><button
+      <router-link :to="{ name: 'Portada' }" class="navbar-brand">
+        V8
+      </router-link>
+      <button
         data-toggle="collapse"
         data-target="#navbarResponsive"
         class="navbar-toggler"
