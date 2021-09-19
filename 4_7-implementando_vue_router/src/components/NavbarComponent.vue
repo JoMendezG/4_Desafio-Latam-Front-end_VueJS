@@ -28,7 +28,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A RUTA ESTÁTICA -->
-            <a href="/post/1">último post</a>
+            <a href="/post/1">Último post</a>
           </li>
         </ul>
       </div>
