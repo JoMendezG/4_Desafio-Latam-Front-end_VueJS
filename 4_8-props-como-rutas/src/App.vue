@@ -1,7 +1,6 @@
 <template>
   <div>
     <NavbarComponent />
-
     <router-view></router-view>
   </div>
 </template>
