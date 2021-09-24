@@ -18,16 +18,19 @@ export default new Router({
       path: "/",
       component: Portada,
       name: "Portada",
+      alias: ["/home", "/inicio", "/portada"],
     },
     {
       path: "/sobremi",
       component: SobreMi,
       name: "SobreMi",
+      alias: ["/acerca"],
     },
     {
       path: "/contacto",
       component: Contacto,
       name: "Contacto",
+      alias: ["/contactame"],
     },
     {
       path: "/post",
