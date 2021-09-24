@@ -47,9 +47,29 @@ export default new Router({
       name: "NotFound",
     },
     {
-      path: "/administrador",
+      path: "/administrador/simple",
       component: Administrador,
       name: "Administrador",
+      props: {
+        administrador: "Bienvenido a la página de Administración",
+      },
+    },
+    {
+      path: "/administrador/avanzado",
+      component: Administrador,
+      name: "Administrador",
+      props: {
+        administrador:
+          "Esta página de administración está en construcción. Intente como administrador simple",
+      },
+    },
+    {
+      path: "/administrador/*",
+      component: Administrador,
+      name: "Administrador",
+      props: {
+        administrador: "Esta ruta no existe",
+      },
     },
   ],
 });
