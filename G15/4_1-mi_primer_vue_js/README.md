@@ -17,7 +17,7 @@ Todos estos datos deben estar almacenados en la data de la instancia de VueJS y 
 
 **Hint** si utilizas arreglos y objetos en las variables dentro de la `data` de la instancia de Vue, serán menos líneas de programación.
 
-![Foto1](/README_Files/Foto1.jpg)
+![Foto1](README_Files/Foto1.jpg)
 
 ## Instrucciones
 
