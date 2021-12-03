@@ -24,7 +24,7 @@
 
     <a href="#" @click.prevent="saludar">Boton</a>
   </div>
-</template>s
+</template>
 
 <script>
 import Componente from "./components/Componente.vue";
