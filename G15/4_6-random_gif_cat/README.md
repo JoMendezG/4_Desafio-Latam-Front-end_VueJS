@@ -54,4 +54,4 @@ muestre el resultado en la vista de Vue.js, como en la siguiente imagen:
 
 # Resultado
 
-![img1](src/assets/resultado.jpg)
+![img1](src/assets/resultado.png)
