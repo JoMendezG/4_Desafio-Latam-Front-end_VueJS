@@ -6,7 +6,7 @@ Desarrollaremos una pequeña pokeguía que nos permitirá buscar un pokémon.
 
 Al hacer ésto, la página deberá desplegar una foto de dicho pokémon, junto con una lista de movimientos y habilidades, como se muestra en la siguiente imagen:
 
-[img1]: ./src/assets/img/readme.jpg
+![img1](src/assets/img/readme.jpg)
 
 Para realizar ésto, haremos uso de la PokéAPI, la cual consumiremos con el método integrado fetch de Javascript, mediante la siguiente URL:
 
