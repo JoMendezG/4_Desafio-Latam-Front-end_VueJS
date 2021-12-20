@@ -8,7 +8,7 @@
       <input @keydown.enter="cargarApi" v-model="namePokemon" type="text" />
       <button @click="cargarApi">Buscar pokemon</button>
     </div>
-    <div class="derecha">
+    <div class="derecha" :style="backgroundPokemon">
       <!-- 7. Cargo el nombre del pokemon -->
       <h2 class="namePokemon">{{ namePokemon }}</h2>
 
@@ -53,6 +53,22 @@ export default {
     return {
       namePokemon: "pikachu",
       pokedata: {},
+      listaDeColores: {
+        fire: "#fb6c6c",
+        electric: "#ffce4b",
+        grass: "#48d0b0",
+        normal: "#a0a0a0",
+        water: "#58aaf6",
+        dark: "#413a4c",
+        fighting: "#d96e36",
+        steel: "#e6f3ea",
+        poison: "#b892bc",
+        psychic: "#8d4199",
+        rock: "#d39228",
+        ground: "#a49b48",
+        ice: "#02c0c9",
+        fairy: "#ecb0d0",
+      },
     };
   },
   methods: {
@@ -91,6 +107,17 @@ export default {
       return this.pokedata.types;
     },
 
+    backgroundPokemon() {
+      if (!Object.prototype.hasOwnProperty.call(this.pokedata, "types")) {
+        return;
+      }
+
+      let color = this.listaDeColores[this.pokedata.types[0].type.name];
+      console.log(color);
+
+      return `background-color: ${color}`;
+    },
+
     movPokemon() {
       if (!Object.prototype.hasOwnProperty.call(this.pokedata, "moves")) {
         return;
@@ -122,14 +149,14 @@ export default {
 
 .izquierda {
   width: 40%;
-  margin-top: 50px;
-  background-color: green;
+  margin-top: 25px;
+  background-color: #f9f9f9;
 }
 
 .derecha {
-  background-color: red;
+  background-color: #a0a0a0;
   width: 40%;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .namePokemon {
@@ -176,13 +203,18 @@ export default {
 
 .Movimientos,
 .Habilidades {
+  color: #707070;
+  width: 50%;
+}
+.Movimientos h3,
+.Habilidades h3 {
   color: white;
   width: 50%;
 }
 
 .ulMovimientos,
 .ulHabilidades {
-  background-color: #ffffff48;
+  background-color: white;
   border-radius: 10px;
   margin: 20px 15px;
   list-style: none;
@@ -208,7 +240,7 @@ export default {
 
 .tPokedex {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 28px;
   font-weight: 100;
 }
@@ -220,7 +252,8 @@ input {
   height: 36px;
   border-radius: 36px;
   border: none;
-  background-color: #ffffffa1;
+  background-color: #e8e8e8;
+  padding: 0 10px;
 }
 
 button {
@@ -229,5 +262,8 @@ button {
   border-radius: 50px;
   margin: 25px auto;
   display: block;
+  background-color: #ffcb05;
+  border: 3px #155ea3 solid;
+  color: #155ea3;
 }
 </style>
