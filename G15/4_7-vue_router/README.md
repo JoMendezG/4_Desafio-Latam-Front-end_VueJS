@@ -1,4 +1,4 @@
-# - Implementación de Vue Router y uso de rutas
+# Implementación de Vue Router y uso de rutas
 
 ## Descripción
 
