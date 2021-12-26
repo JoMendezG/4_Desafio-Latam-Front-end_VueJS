@@ -23,3 +23,7 @@ Lista al eliminar una opción
 1.  Métodos, cada vez que se pulsa el botón para guardar las tareas en una lista, se debe mostrar el elemento guardado y además pasar el elemento como props al componente hijo.
 
 1.  Cada vez que pulsemos sobre el botón eliminar, se debe eliminar el ítem de la lista, pasando como atributo al padre, el índice del elemento a borrar o el texto completo.
+
+## Resultado
+
+![Resultado](README_Files/Resultado.jpg)
