@@ -19,6 +19,12 @@ const routes = [
     name: "Opiniones",
     component: () => import("../views/Opiniones.vue"),
   },
+  {
+    path: "/admin/:id",
+    name: "EditComentario",
+    component: () => import("../views/EditarComentario.vue"),
+    props: true,
+  },
 ];
 
 const router = new VueRouter({

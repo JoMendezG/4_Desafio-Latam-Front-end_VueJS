@@ -59,7 +59,7 @@ export default {
   props: ["propNombreJuego", "propSubNombreJuego"],
   data() {
     return {
-      nombre: "",
+      nombreUsuario: "",
       opinion: "",
     };
   },
@@ -67,11 +67,12 @@ export default {
   methods: {
     // Función que guarda la opinión
     guardarOpinion() {
-      if (this.juego === "" || this.opinion === "") {
+      if (this.juegpropSubNombreJuego === "" || this.opinion === "") {
         return;
       }
       let data = {
-        juego: this.juego,
+        juegoName: this.propNombreJuego,
+        juegoSubName: this.propSubNombreJuego,
         nombre: this.nombre,
         opinion: this.opinion,
       };

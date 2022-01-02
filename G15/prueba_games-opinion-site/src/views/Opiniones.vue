@@ -20,10 +20,7 @@
               aria-controls="flush-collapseOne"
             >
               Opinión creada por: {{ opinion.nombre }}. <br />
-              Para el juego: The Legend of Zelda
-              {{ opinion.juego }}
-
-              <button mx-auto>Eliminar</button>
+              {{ opinion.juegoName }} {{ opinion.juegoSubName }}.
             </button>
           </h2>
           <div
