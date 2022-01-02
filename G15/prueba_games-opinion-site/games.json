@@ -4,6 +4,7 @@
         "subName": "Between worlds",
         "rating": 9.3,
         "released": "22-11-2013",
+        "plataformas": "Nintendo 3DS",
         "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF6LQXXY1j8Dq0a3qZQxuMHi6GKFWj3A3BWw&usqp=CAU"
     },
     {
@@ -11,6 +12,55 @@
         "subName": "Twilight Princess",
         "rating": 9.6,
         "released": "19-11-2006",
+        "plataformas": "Nintendo GameCube, Wii, Wii U, NVIDIA Shield Android TV",
         "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQske-_sWd3XS2qPpfuH4uwCLeZ_SWBli8SwQ&usqp=CAU"
+    }, 
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "Majora's Mask",
+        "rating": 9.6,
+        "released": "27-04-2000",
+        "plataformas": "Nintendo 64, Nintendo Switch, Nintendo GameCube, Wii, Wii U",
+        "background_image":"https://cl.buscafs.com/www.levelup.com/public/uploads/images/618482_945x532.jpg"    
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "Ocarina of Time",
+        "rating": 9.6,
+        "released": "21-11-1998",
+        "plataformas": " Nintendo 64, Nintendo Switch, Nintendo GameCube, Wii, Wii U, Nintendo iQue",
+        "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeHqDBHzcpsWClB4K7EpK-D5cGExVLaJzzQ&usqp=CAU"
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "Spirit Tracks",
+        "rating": 9.5,
+        "released": "07-12-2009",
+        "plataformas": "Wii U, Nintendo DS",
+        "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdHOIJg_ihCHQugeVM9euvXIT2EOi52JIhhw&usqp=CAU"
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "The Wind Waker",
+        "rating": 9.6,
+        "released": "13-12-2002",
+        "plataformas": "Nintendo GameCube, Wii U",
+        "background_image": "https://pivigames.blog/wp-content/uploads/2017/03/maxresdefault-1-8.jpg"
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "Skyward Sword",
+        "rating": 9.4,
+        "released": "18-11-2011",
+        "plataformas": "Nintendo Switch, Wii, Wii U",
+        "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbqzVJihDPI9G8Lx3p9RRHKRKRzjT1294rw&usqp=CAU"
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "subName": "Link's Awakening",
+        "rating": 9.3,
+        "released": "06-06-1993",
+        "plataformas": "Game Boy, Game Boy Color, Nintendo Switch, Nintendo 3DS",
+        "background_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWnXAX-niqz9Zy3Q8Fz5gVpbqC-gBKtD0wYA&usqp=CAU"
     }
 ]

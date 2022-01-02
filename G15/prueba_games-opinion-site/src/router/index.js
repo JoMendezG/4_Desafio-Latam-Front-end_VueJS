@@ -25,6 +25,11 @@ const routes = [
     component: () => import("../views/EditarComentario.vue"),
     props: true,
   },
+  {
+    path: "*",
+    name: "404",
+    component: () => import("../views/404.vue"),
+  },
 ];
 
 const router = new VueRouter({

@@ -9,7 +9,7 @@
       <div
         v-for="(juegos, index) in juegosTLOZ"
         :key="index"
-        class="col-lg-3 col-sm-6"
+        class="col-lg-3 col-sm-6 my-3"
       >
         <div class="card" style="width: 18rem">
           <!-- Agregar los : para vincular la información -->
@@ -20,6 +20,7 @@
             <hr />
             <p>Rating: {{ juegos.rating }}</p>
             <p>Lanzamiento: {{ juegos.released }}</p>
+            <p>Plataformas: {{ juegos.plataformas }}</p>
 
             <!-- Botón que permite opinar sobre el juego -->
             <!-- Dentro del paréntesis entregamos el nombre del juego directamente -->
