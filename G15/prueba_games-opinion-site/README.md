@@ -35,25 +35,38 @@ Así mismo, el sitio web debe permitir que el usuario realice una opinión sobre
 
 El JSON que deberás consumir en esta prueba estará disponible en el archivo **“Apoyo Prueba - Games Opinion Site”** que se encuentra entre los documentos de esta sesión. Siéntete libre de agregar más videojuegos al archivo JSON si deseas, siguiendo la misma estructura de datos.
 
-Te recomendamos utilizar LocalStorage para persistir la información que el usuario gestione o bien utilizar el plugin [Vuex Persisted] (https://www.npmjs.com/package/vuex-persistedstate) State para automatizar la persistencia del estado global.
+Te recomendamos utilizar LocalStorage para persistir la información que el usuario gestione o bien utilizar el plugin [Vuex Persisted](https://www.npmjs.com/package/vuex-persistedstate) State para automatizar la persistencia del estado global.
 
 ## Diseño del Sitio Web
 
 ![img1](src/assets/FotosReadme/1.jpg)
+
 ![img2](src/assets/FotosReadme/2.jpg)
+
 ![img3](src/assets/FotosReadme/3.jpg)
+
 ![img4](src/assets/FotosReadme/4.jpg)
+
 ![img5](src/assets/FotosReadme/5.jpg)
+
 ![img6](src/assets/FotosReadme/6.jpg)
+
 ![img7](src/assets/FotosReadme/7.jpg)
+
 ![img8](src/assets/FotosReadme/8.jpg)
+
 ![img9](src/assets/FotosReadme/9.jpg)
 
 ## Resultado
 
 ![img10](src/assets/FotosReadme/10.png)
+
 ![img11](src/assets/FotosReadme/11.jpg)
+
 ![img12](src/assets/FotosReadme/12.png)
+
 ![img13](src/assets/FotosReadme/13.png)
+
 ![img14](src/assets/FotosReadme/14.png)
+
 ![img15](src/assets/FotosReadme/15.png)
