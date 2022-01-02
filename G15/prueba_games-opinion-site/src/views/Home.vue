@@ -14,19 +14,19 @@
         <div class="card" style="width: 18rem">
           <!-- Agregar los : para vincular la información -->
           <img :src="juegos.background_image" class="card-img-top" />
-          <div class="card-body">
+          <div class="card-body flex-lg-column">
             <h5 class="card-title fw-normal">{{ juegos.name }}</h5>
             <h6 class="card-subtitle fw-normal">{{ juegos.subName }}</h6>
             <hr />
-            <p>Rating: {{ juegos.rating }}</p>
-            <p>Lanzamiento: {{ juegos.released }}</p>
-            <p>Plataformas: {{ juegos.plataformas }}</p>
+            <p><b>Rating:</b> {{ juegos.rating }}</p>
+            <p><b>Lanzamiento:</b> {{ juegos.released }}</p>
+            <p><b>Plataformas:</b> {{ juegos.plataformas }}</p>
 
             <!-- Botón que permite opinar sobre el juego -->
             <!-- Dentro del paréntesis entregamos el nombre del juego directamente -->
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-success align-self-end"
               data-bs-toggle="modal"
               data-bs-target="#modal-opinion"
               @click="cargarJuego(juegos.name, juegos.subName)"
@@ -85,7 +85,29 @@ img {
   border: none;
 }
 
+.card-img-top {
+  height: 140px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
 p {
   margin-bottom: 5px;
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  margin-top: auto;
 }
 </style>
