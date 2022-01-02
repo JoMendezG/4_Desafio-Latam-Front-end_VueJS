@@ -23,7 +23,7 @@ const store = new Vuex.Store({
       state.opiniones.splice(index, 1);
     },
 
-    actualizarOpinion(state, data) {
+    actualizarComentario(state, data) {
       state.opiniones[data.index] = data.opinion;
     },
   },

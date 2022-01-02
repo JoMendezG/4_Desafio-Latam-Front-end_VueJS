@@ -1,8 +1,12 @@
 <template>
   <div class="container">
-    <h1 class="my-4 fw-bold text-center">
-      Editando la opinión de: {{ juego }}
+    <h1 class="mt-5 text-center">
+      <!-- Esta viene del mounted -->
+      Editando la opinión de:
     </h1>
+    <h2 class="my-2 text-center">
+      {{ juegoNombreEdit }} {{ juegoSubNombreEdit }}
+    </h2>
     <form>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
@@ -30,7 +34,7 @@
       <button
         type="button"
         class="btn btn-info"
-        @click="actualizarOpinion(id - 1)"
+        @click="actualizarComentario(id - 1)"
       >
         Guardar
       </button>
@@ -41,9 +45,11 @@
 <script>
 export default {
   props: ["id"],
+
   data() {
     return {
-      juego: "",
+      juegoNombreEdit: "",
+      juegoSubNombreEdit: "",
       nombre: "",
       opinion: "",
     };
@@ -53,17 +59,21 @@ export default {
     regresar() {
       this.$router.go(-1);
     },
-    actualizarOpinion() {
+
+    // Método que actualiza el comentario, toma el nombre del juego, nombre del cliente y la opinión
+    actualizarComentario() {
       let data = {
         index: this.id - 1,
         opinion: {
-          juego: this.filtrarOpiniones.juego,
+          juegoNombreEdit: this.filtrarOpiniones.juegoNombreEdit,
+          juegoSubNombreEdit: this.filtrarOpiniones.juegoSubNombreEdit,
           nombre: this.nombre,
           opinion: this.opinion,
         },
       };
 
-      this.$store.commit("actualizarOpinion", data);
+      // Con este commit se actualiza el comentario en el store y lo puedo ver actuaizado en la ventana de opiniones
+      this.$store.commit("actualizarComentario", data);
       alert(`${this.nombre}, ¡Tu opinión ha sido actualizada!`);
     },
   },
@@ -79,9 +89,12 @@ export default {
   },
 
   mounted() {
+    // Colocamos las mismas variables del modal
+    // Estas variables van en el html
     this.nombre = this.filtrarOpiniones.nombre;
     this.opinion = this.filtrarOpiniones.opinion;
-    this.juego = this.filtrarOpiniones.juego;
+    this.juegoNombreEdit = this.filtrarOpiniones.juegoName;
+    this.juegoSubNombreEdit = this.filtrarOpiniones.juegoSubName;
   },
 };
 </script>
