@@ -28,12 +28,12 @@
           v-model="opinion"
         ></textarea>
       </div>
-      <button type="button" class="btn btn-secondary" @click="regresar">
+      <button type="button" class="btn btn-outline-secondary" @click="regresar">
         Regresar
       </button>
       <button
         type="button"
-        class="btn btn-info"
+        class="btn btn-success"
         @click="actualizarComentario(id - 1)"
       >
         Guardar

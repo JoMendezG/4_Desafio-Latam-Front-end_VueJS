@@ -43,7 +43,7 @@
           <button
             type="button"
             data-bs-dismiss="modal"
-            class="btn btn-primary"
+            class="btn btn-success"
             @click="guardarOpinion"
           >
             Guardar

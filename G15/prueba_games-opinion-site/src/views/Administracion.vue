@@ -24,7 +24,7 @@
           <td>{{ opinion.opinion }}</td>
           <td style="text-align: right">
             <button
-              class="btn btn-danger me-5"
+              class="btn btn-outline-danger me-5"
               @click="eliminarComentario(index)"
             >
               Eliminar
@@ -32,7 +32,7 @@
             <router-link
               :to="{ name: 'EditComentario', params: { id: index + 1 } }"
             >
-              <button class="btn btn-primary">Editar</button>
+              <button class="btn btn-success">Editar</button>
             </router-link>
           </td>
         </tr>
